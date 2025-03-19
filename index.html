@@ -2,160 +2,156 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name</title>
-    <link rel="icon" type="image/x-icon" href="images/Infografika full-stack developer.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Varma V | Portfolio</title>
+    <link rel="icon" type="image/png" href="images/Infografika full-stack developer.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 15px 20px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .header-row ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .header-row ul li {
+            margin: 0 15px;
+        }
+        .header-row ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .header-row ul li a:hover {
+            color: #f4a261;
+        }
+        .row {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .box img {
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .box img:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background: #f4a261;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #e76f51;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+        }
+        .skills-icons i {
+            font-size: 40px;
+            margin: 10px;
+            color: #555;
+            transition: transform 0.3s;
+        }
+        .skills-icons i:hover {
+            transform: scale(1.2);
+            color: #f4a261;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header-row">
-            <div class="box">
-                <h1>Aditya Varma V</h1>
-            </div>
-            <div class="box">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <div class="header-row">
+        <div class="box">
+            <h1>Aditya Varma V</h1>
         </div>
-
-        <div class="row" id="home">
-            <div style="display: flex;padding-top: 50px;">
-                <div class="box">
-                    <h1>Full Stack Developer</h1>
-                    <p>
-                        As a Full-Stack Developer, I specialize in building end-to-end web applications that offer
-                        seamless user experiences and robust back-end functionality. With expertise in both front-end
-                        and back-end technologies, I am capable of designing, developing, and deploying scalable and
-                        efficient solutions. I thrive in creating responsive, dynamic user interfaces using modern
-                        frameworks and technologies, while also developing the underlying infrastructure that ensures
-                        performance and security.
-                    </p>
-                    <p>
-                        I am experienced with version control tools like Git and platforms like GitHub or GitLab for
-                        collaborative development, ensuring smooth team workflows and continuous integration/continuous
-                        deployment (CI/CD).
-                    </p>
-                    
-                </div>
-                <div class="box">
-                    <img src="https://picsum.photos/id/2/400/400" />
-                </div>
-            </div>
+        <div class="box">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-
-        <div id="projects" class="row" style="background-color: lightcoral">
-            <h1>Projects</h1>
-            <div style="display: flex">
-                <div class="box">
-                    <a href="p1.html">Project 1</a>
-                    <p>
-                        A Simple online store project uisng html.
-                    </p>
-                </div>
-
-                <div class="box">
-                    <a href="bank.html">Project 2</a>
-                    <p>
-                        A simple bank login page.
-                    </p>
-                </div>
-
-                
-            </div>
-        </div>
-        <div id="services" class="row" style="background-color: lightblue">
-            <h1>Services</h1>
-            <div style="display: flex">
-                <div class="box">
-                    <h3>Web App Development</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                        quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-                        aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-                        Perspiciatis, ab.
-                    </p>
-                </div>
-
-                <div class="box">
-                    <h3>Mobile App Development</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                        quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-                        aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-                        Perspiciatis, ab.
-                    </p>
-                </div>
-
-                <div class="box">
-                    <h3>Backend Development</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                        quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-                        aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-                        Perspiciatis, ab.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div id="about" class="row">
-            <h1>About</h1>
-            <h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
-                optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
-                ipsa veniam deserunt asperiores nesciunt at provident itaque
-                cupiditate vel dolor.
-            </h3>
-            <h2>Skills</h2>
-            <h3>Java, Python, Reactjs</h3>
-            <p>Display the logo of all the technologies you know.</p>
-        </div>
-        <div id="contact" class="row" style="background-color: lightgoldenrodyellow">
-            <h1>Contact</h1>
-            <div style="display: flex">
-
-
-                <div class="box">
-                    <h3>Contact Form</h3>
-                    <p>
-                        <input type="text" placeholder="Enter Name">
-                    </p>
-                    <p>
-                        <input type="email" placeholder="Enter Email">
-                    </p>
-                    <p>
-                        <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
-                    </p>
-                    <button>Send</button>
-                </div>
-
-                <div class="box">
-                    <h3>Your/Company Name</h3>
-                    <p>
-                        <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                        quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
-                        aliquid ut eveniet. Et illum odio ut voluptates molestiae?
-                        Perspiciatis, ab.
-                    </p>
-                    <p>
-                        <b>Email Address: </b>sample@email.com
-                    </p>
-                    <p>
-                        <b>Phone Number: </b>+91 343 445 6789
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="footer">@copyright 2024. All rights reserved.</div>
     </div>
+    
+    <div class="row" id="home">
+        <h1>Full Stack Developer</h1>
+        <p>Creating dynamic, responsive, and scalable web applications.</p>
+        <button onclick="location.href='#contact'">Get in Touch</button>
+    </div>
+
+    <div id="projects" class="row" style="background-color: lightcoral">
+        <h1>Projects</h1>
+        <div>
+            <div class="box">
+                <a href="p1.html">Project 1</a>
+                <p>A Simple online store project using HTML.</p>
+            </div>
+            <div class="box">
+                <a href="bank.html">Project 2</a>
+                <p>A simple bank login page.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="row" style="background-color: lightblue">
+        <h1>Services</h1>
+        <p>Offering Web Development, Mobile Development, and Backend Solutions.</p>
+    </div>
+
+    <div id="about" class="row">
+        <h1>About</h1>
+        <h2>Skills</h2>
+        <div class="skills-icons">
+            <i class="fab fa-java"></i>
+            <i class="fab fa-python"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-node-js"></i>
+        </div>
+    </div>
+
+    <div id="contact" class="row" style="background-color: lightgoldenrodyellow">
+        <h1>Contact</h1>
+        <p>Reach out via email or social media.</p>
+        <button onclick="window.location.href='mailto:sample@email.com'">Email Me</button>
+    </div>
+
+    <div class="footer">&copy; 2024. All rights reserved.</div>
 </body>
 
 </html>
