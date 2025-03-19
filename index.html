@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +8,32 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        /* Animated Background */
+        /* Animated Starry Background */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             color: #ffffff;
-            background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #00a8cc);
-            background-size: 400% 400%;
-            animation: gradientBG 10s ease infinite;
+            background-color: #0b0c10;
             overflow-x: hidden;
         }
 
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        /* Starry Effect */
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/dZZWfAP.png') repeat;
+            animation: starMove 50s linear infinite;
+            z-index: -1;
         }
 
+        @keyframes starMove {
+            from { background-position: 0 0; }
+            to { background-position: -10000px 10000px; }
+        }
+
+        /* Container */
         .container {
             width: 90%;
             margin: auto;
@@ -69,13 +76,13 @@
             color: #00a8cc;
         }
 
-        /* Section Styles */
+        /* Sections */
         .row {
             padding: 80px 0;
             text-align: center;
         }
 
-        /* Project Section */
+        /* Box Styling */
         .box {
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -107,7 +114,7 @@
             box-shadow: 0 0 15px rgba(231, 111, 81, 0.9);
         }
 
-        /* Skills Section */
+        /* Skills */
         .skills-icons i {
             font-size: 50px;
             margin: 15px;
@@ -142,6 +149,8 @@
 </head>
 
 <body>
+    <div class="stars"></div> <!-- Starry background layer -->
+
     <div class="header-row">
         <div class="box">
             <h1>Aditya Varma V</h1>
@@ -201,5 +210,4 @@
 
     <div class="footer">&copy; 2024. All rights reserved.</div>
 </body>
-
 </html>
