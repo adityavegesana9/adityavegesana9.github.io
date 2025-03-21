@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        /* Animated Starry Background */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -18,7 +17,6 @@
             overflow-x: hidden;
         }
 
-        /* Starry Effect */
         .stars {
             position: fixed;
             width: 100%;
@@ -33,13 +31,11 @@
             to { background-position: -10000px 10000px; }
         }
 
-        /* Container */
         .container {
             width: 90%;
             margin: auto;
         }
 
-        /* Header */
         .header-row {
             display: flex;
             justify-content: space-between;
@@ -76,18 +72,15 @@
             color: #00a8cc;
         }
 
-        /* Sections */
         .row {
             padding: 80px 0;
             text-align: center;
         }
 
-        /* Fix for Full Stack Developer Visibility */
         #home {
-            padding-top: 120px; /* Adjusted to prevent overlap */
+            padding-top: 120px;
         }
 
-        /* Box Styling */
         .box {
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -101,7 +94,6 @@
             box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
         }
 
-        /* Buttons */
         button {
             background: #00a8cc;
             color: white;
@@ -119,27 +111,12 @@
             box-shadow: 0 0 15px rgba(231, 111, 81, 0.9);
         }
 
-        /* Skills */
-        .skills-icons i {
-            font-size: 50px;
-            margin: 15px;
-            color: #f4a261;
-            transition: transform 0.3s, color 0.3s;
-            animation: floatAnimation 3s infinite ease-in-out;
+        .project-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
         }
 
-        .skills-icons i:hover {
-            transform: scale(1.3);
-            color: #e76f51;
-        }
-
-        @keyframes floatAnimation {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-
-        /* Footer */
         .footer {
             text-align: center;
             padding: 15px;
@@ -152,9 +129,8 @@
         }
     </style>
 </head>
-
 <body>
-    <div class="stars"></div> <!-- Starry background layer -->
+    <div class="stars"></div>
 
     <div class="header-row">
         <div class="box">
@@ -181,11 +157,11 @@
         <h1>📂 Projects</h1>
         <div>
             <div class="box">
-                <a href="p1.html">🌐 Project 1</a>
+                <a href="p1.html" class="project-title">🌐 Project 1</a>
                 <p>A Simple online store project using HTML.</p>
             </div>
             <div class="box">
-                <a href="bank.html">🏦 Project 2</a>
+                <a href="bank.html" class="project-title">🏦 Project 2</a>
                 <p>A simple bank login page.</p>
             </div>
         </div>
@@ -199,12 +175,6 @@
     <div id="about" class="row">
         <h1>🛠 About</h1>
         <h2>Skills</h2>
-        <div class="skills-icons">
-            <i class="fab fa-java"></i>
-            <i class="fab fa-python"></i>
-            <i class="fab fa-react"></i>
-            <i class="fab fa-node-js"></i>
-        </div>
     </div>
 
     <div id="contact" class="row" style="background-color: rgba(255, 255, 255, 0.3);">
